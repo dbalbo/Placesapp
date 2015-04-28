@@ -8,4 +8,10 @@ describe(Place) do
       expect(test_place.description()).to(eq("Jamaica"))
     end
   end
+
+  describe('.all') do
+    it("is empty at first") do
+      expect(Place.all()).to(eq([]))
+    end
+  end
 end
